@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- animate__animated -->
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="Assets/css/style.css">
+    <link rel="shortcut icon" href="assets/images/favicon_2.png" type="image/x-icon">
+    <!-- icon_font -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <link rel="stylesheet" href="Assets/font/Tangerine-Regular.ttf"> -->
+    <title>ROYAL EMPIRE HOTEL</title>
+    <Style>
+        .nav li a.active {
+            margin-bottom: 2px;
+            color: #aa8453;
+            text-decoration-line: underline;
+        }
+
+        .bg::before {
+            content: "";
+            position: absolute;
+            filter: brightness(70%);
+            background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1)),
+                url('./Assets/images/r1.jpg') no-repeat center center/cover;
+            height: 540px;
+            width: 100%;
+            z-index: -1;
+        }
+
+        .container {
+            display: grid;
+            place-items: center;
+            margin-top: 90px;
+            color: white;
+        }
+
+        #l2 {
+            font-family: 'stangith';
+            font-size: 60px;
+            letter-spacing: 8px;
+            line-height: 160px;
+        }
+
+        /* room card */
+        *,
+        *:after,
+        *:before {
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -ms-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+
+        .rooms {
+            font-family: arial;
+            font-size: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            min-height: 100vh;
+            margin: 160px;
+            margin-bottom: -210px;
+        }
+        .rooms_row2{
+            font-family: arial;
+            font-size: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            min-height: 100vh;
+            margin: 0px 160px 160px 160px;
+            margin-bottom: -50px;
+        }
+
+        .rooms img {
+            max-width: 100%;
+        }
+
+        .rooms_row2 img{
+            max-width: 100%;
+        }
+
+        .ui-card {
+            width: 350px;
+            position: relative;
+            overflow: hidden;
+            transition: all 0.3s ease-out;
+            background: radial-gradient(#111 50%, #000 100%);
+        }
+
+        .ui-card img {
+            transform: scale(1.1);
+            transition: all 0.3s ease-out;
+        }
+
+        .ui-card:hover img {
+            transform: scale(1.3) translateY(-20px);
+            opacity: 0.3
+        }
+
+        .ui-card .description {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            padding: 15px;
+            width: 100%;
+            text-align: center;
+            color: #fff;
+            font-size: 18px;
+        }
+
+        .ui-card .description h3 {
+            font-weight: 700;
+            font-size: 32px;
+            margin: 0 0 20px;
+            transform: translateY(30px);
+            opacity: 0;
+            transition: all 0.3s ease-out;
+
+        }
+
+        .ui-card .description p {
+            transform: translateY(30px);
+            opacity: 0;
+            transition: all 0.3s ease-out 0.2s;
+            margin-bottom: 13px;
+        }
+
+        .ui-card .description a {
+            color: #fff;
+            background: #aa8453;
+            display: inline-block;
+            padding: 10px 25px;
+            border-radius: 5px;
+            text-decoration: none;
+            transform: translateY(30px);
+            opacity: 0;
+            transition: all 0.3s ease-out 0.4s;
+        }
+
+        .ui-card .description a:hover {
+            background: #ab8a62;
+        }
+
+        .ui-card:hover .description h3 {
+            opacity: 1;
+            transform: translateY(0px);
+        }
+
+        .ui-card:hover .description p {
+            opacity: 1;
+            transform: translateY(0px);
+        }
+
+        .ui-card:hover .description a {
+            opacity: 1;
+            transform: translateY(0px);
+        }
+    </Style>
+</head>
+
+<body>
+    <header>
+        <!-- ---------------navbar-------------- -->
+        <div class="bg">
+            <nav>
+                <div class="navbar">
+                    <!-- Left box for logo -->
+                    <div class="left">
+                        <img src="assets/images/L_1.png" alt="LOGO">
+                    </div>
+                    <!-- mid box for navbar -->
+                    <!-- onclick="alert('Coming Soon... This page is under maintenance.')" -->
+                    <div class="mid">
+                        <ul class="nav">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li class="active"><a href="#">Room</a></li>
+                            <li><a href="#services">Services</a></li>
+                            <li><a href="contact.html">Contact us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+    </header>
+    <!-- main_section -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+        <script>
+            function loadDoc() {
+                var xhttp = new XMLHttpRequest();
+                xhttp.onreadystatechange = function () {
+                    if (this.readyState == 4 && this.status == 200) {
+                        document.getElementById("demo").innerHTML =
+                            this.responseText;
+                    }
+                };
+                xhttp.open("GET", "Room.xml", true);
+                xhttp.send();
+            }
+        </script> -->
+
+    <main>
+        <div class="container">
+            <span class="heading animate__animated animate__zoomIn" id="l2"> Rooms & Suites </span>
+        </div>
+
+        <!-- <div id="demo">
+            <h1 style="color:rgb(18, 111, 137);">Learn about our Hospital.....</h1>
+            <button type="button" class="btn"  onclick="loadDoc()">Learn More...!</button>
+            </div> -->
+
+        <!-- room card  -->
+        <div class="rooms">
+            <div class="ui-card">
+                <img src="assets/images/r2.jpg">
+                <div class="description">
+                    <h3>Junior Suite</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+            <div class="ui-card">
+                <img src="assets/images/r3.jpg">
+                <div class="description">
+                    <h3>Family Room</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+            <div class="ui-card">
+                <img src="assets/images/r4.jpg">
+                <div class="description">
+                    <h3>Double Room</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="rooms_row2">
+            <div class="ui-card">
+                <img src="assets/images/r6.jpg">
+                <div class="description">
+                    <h3>Deluxe Room</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+            <div class="ui-card">
+                <img src="assets/images/r5.jpg">
+                <div class="description">
+                    <h3>Superior Room</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+            <div class="ui-card">
+                <img src="assets/images/p2.jpg">
+                <div class="description">
+                    <h3>Wellness Room</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- footer -->
+        <footer>
+            <div class="footer">
+                <div class="left_footer">
+                    <span>About Hotel</span><br><br>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore possimus, labore suscipit amet
+                        sint,
+                        quam nam provident quos, ipsa eos officia at quasi cum molestias.</p>
+                    <img src="assets/images/footer-logos-dark.png" alt="">
+                </div>
+                <div class="mid_footer">
+                    <span>Explore</span>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Room</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="contact.html">Contact us</a></li>
+                    </ul>
+                </div>
+                <div class="right_footer">
+                    <span>Newsletter</span>
+                    <p>Stay up to date! Subscribe to us!</p>
+                    <input type="email" id="ip_email" placeholder="Enter your e-mail address"><br><br>
+                    <span>Get In Touch</span><br><br>
+                    <span><i class="fa-brands fa-facebook"></i><i class="fa-brands fa-instagram"></i><i
+                            class="fa-brands fa-twitter"></i><i class="fa-brands fa-google"></i><i
+                            class="fa-brands fa-youtube"></i></span>
+                </div>
+                <div class="bottom_footer">
+                    <P>&copy;Copyright 2023 THE ROYAL EMPIRE. All rights reserved by <b> HK_developer</b>.</P>
+                </div>
+            </div>
+        </footer>
+</body>
+
+</html>

@@ -1,0 +1,150 @@
+#demo{
+    font-family: 'stangith';
+    font-size: 25px;
+    letter-spacing: 1px;
+    font-weight: 550;
+}
+
+.contact_bg::before {
+    content: "";
+    position: absolute;
+    filter: brightness(70%);
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)),
+        url('../images/contact.jpg') no-repeat center center/cover;
+    height: 540px;
+    width: 100%;
+    z-index: -1;
+}
+
+#l2 {
+    font-family: 'stangith';
+    font-size: 65px;
+    letter-spacing: 13px;
+    position: relative;
+    top: 50px;
+    word-spacing: 6px;
+    text-transform: uppercase;
+}
+
+.row_conbar {
+    padding: 170px 150px 20px 150px;
+    display: flex;
+}
+
+.contact {
+    display: flex;
+}
+
+.row_box {
+    background-color: white;
+    width: 153px;
+    padding: 40px 100px;
+    margin: 0px 15px;
+}
+
+.row_box i {
+    color: rgb(47, 45, 45);
+    padding-bottom: 15px;
+}
+
+.row_box span {
+    line-height: 1.5em;
+    font-size: 28px;
+    font-weight: 400;
+    font-family: 'gildaDisplay';
+}
+
+.row_box p {
+    font-size: 20px;
+    font-weight: 400;
+    font-family: 'gildaDisplay';
+}
+
+.section_contact {
+    display: flex;
+}
+
+.getin {
+    margin-top: 50px;
+    margin-left: 200px;
+    color: black;
+    width: 36vw;
+}
+
+.get_row {
+    font-size: 35px;
+    line-height: 35px;
+    letter-spacing: 1px;
+    font-family: 'gildaDisplay';
+    font-weight: 509;
+}
+
+.feedback_form {
+    margin-top: 50px;
+    padding-left: 50px;
+}
+
+#feedback {
+    padding: 10px auto auto 20px;
+}
+
+#name {
+    width: 400px;
+}
+
+#Mobil {
+    width: 190px;
+}
+
+#Email {
+    width: 190px;
+}
+
+.feedback_form input {
+    border: none;
+    box-shadow: none;
+    border-bottom: 1px solid #666;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 20px;
+    line-height: 2.5rem;
+}
+
+.feedback_form textarea {
+    height: 120px;
+    width: 400px;
+    border: none;
+    box-shadow: none;
+    border-bottom: 1px solid #666;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 20px;
+    line-height: 2.5rem;
+}
+
+.btn_send {
+    border: 1px solid white;
+    margin-top: 6px;
+    padding: 8px 26px;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 15px;
+    letter-spacing: 2px;
+    cursor: pointer;
+    background: #815e33;
+    color: #fff;
+    text-transform: uppercase;
+}
+.btn_send:hover{
+    background: #ab8a62;
+    transition: all .4s;
+}
+
+.map{
+    margin-top: 100px;
+    display: grid;
+    place-items: center;
+    margin-bottom: 100px;
+}
+.map iframe{
+    width: 90vw;
+    height: 90vh;
+    filter: invert(1000%);
+}

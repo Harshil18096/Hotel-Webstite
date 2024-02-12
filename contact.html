@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- animate__animated -->
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="Assets/css/style.css">
+    <link rel="stylesheet" href="Assets/css/contact.css">
+    <link rel="shortcut icon" href="assets/images/favicon_2.png" type="image/x-icon">
+    <!-- icon_font -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>ROYAL EMPIRE HOTEL</title>
+    <style>
+        #btn1 {
+            height: 60px;
+            width: 180px;
+            padding: 10px;
+            color: white;
+            background: rgb(163, 29, 29);
+            border: black;
+            border-radius: 2px;
+            font-size: 30px;
+            outline: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <!-- ---------------navbar-------------- -->
+        <div class="contact_bg">
+            <nav>
+                <div class="navbar">
+                    <!-- Left box for logo -->
+                    <div class="left">
+                        <img src="assets/images/L_1.png" alt="LOGO">
+                    </div>
+
+                    <!-- mid box for navbar -->
+                    <div class="mid">
+                        <ul class="nav">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="Room.html">Room</a></li>
+                            <li><a href="index.html">Services</a></li>
+                            <li><a href="#" class="active">Contact us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+    </header>
+
+    <!-- main_section -->
+
+    <main>
+        <div class="container">
+            <span class="heading animate__animated animate__zoomIn" id="l2"> Contact Us </span>
+        </div>
+        </div>
+
+        <section class="contact">
+            <div class="row_conbar">
+                <div class="left_conbar row_box">
+                    <center>
+                        <i class="fa-solid fa-map-location-dot"></i><br>
+                        <span>Address</span><br>
+                        <p>Varachha, Surat, Gujarat</p>
+                    </center>
+                </div>
+                <div class="mid_conbar row_box">
+                    <center>
+                        <i class="fa-solid fa-phone"></i><br>
+                        <span>PHONE</span><br>
+                        <p>+91 99999 99999</p>
+                    </center>
+                </div>
+                <div class="right_conbar row_box">
+                    <center>
+                        <i class="fa-solid fa-envelope"></i><br>
+                        <span>E-mail</span><br>
+                        <p>royalempire@info.com</p>
+                    </center>
+                </div>
+            </div>
+        </section>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+        <script>
+            function loadDoc() {
+                var xhttp = new XMLHttpRequest();
+                xhttp.onreadystatechange = function () {
+                    if (this.readyState == 4 && this.status == 200) {
+                        document.getElementById("demo").innerHTML =
+                            this.responseText;
+                    }
+                };
+                xhttp.open("GET", "Room.xml", true);
+                xhttp.send();
+            }
+        </script>
+
+        <section class="section_contact">
+            <div class="getin">
+                <div class="get_row">Get in Touch </div><br>
+                <p class="row2">Welcome to the best five-star deluxe hotel in city. Lorem ipsum dolor, sit amet
+                    consectetur adipisicing elit. Aut enim id quidem repellat! Asperiores recusandae debitis at odit
+                    modi porro in atque harum dolorem, rerum laboriosam distinctio voluptas maiores deserunt!</p>
+                <p class="row2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat ad consequuntur
+                    voluptatum rerum dignissimos cum dicta, corrupti enim id, labore autem reiciendis doloremque
+                    consequatur sed est illo. Repellat, maiores ratione Lorem ipsum dolor sit amet, consectetur
+                    adipisicing elit. Cum, eos.</p>
+                <img src="assets/images/spoon.png" alt="END" class="spoon_img">
+            </div>
+
+            <div class="feedback_form">
+                <div class="get_row">Write To Us!</div>
+                <br>
+                <form method="post">
+                    <div id="feedback">
+                        <input type="text" id="name" placeholder="Your Name *" required>
+                        <br><br>
+                        <input type="tel" id="Mobile" placeholder="Mobil *" required>&nbsp; &nbsp;
+                        <input type="email" id="Email" placeholder="Email *" required>
+                        <br><br>
+                        <textarea name="message" id="message" cols="30" rows="4" placeholder="Give us your feedback"
+                            required class="text"></textarea>
+                        <br><br>
+                        <input type="checkbox" id="chk1" class="input1" required>
+                        <a href="#">Accept Terms And Conditions</a> <br><br>
+
+                        <button type="button" class="btn btn_send" onclick="loadDoc()">Send Message</button>
+                        <br><br>
+                        <center>
+                            <div id="demo">
+                            </div>
+                        </center>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <!-- xml for feedback form -->
+
+        <section>
+            <div class="map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2630.515710904365!2d72.83207215140271!3d18.92160060067191!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7d1c06fffffff%3A0xc0290485a4d73f57!2sThe%20Taj%20Mahal%20Palace%2C%20Mumbai!5e0!3m2!1sen!2sin!4v1674378127829!5m2!1sen!2sin"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+
+        <!-- footer -->
+
+        <footer>
+            <div class="footer">
+                <div class="left_footer">
+                    <span>About Hotel</span><br><br>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore possimus, labore suscipit amet
+                        sint,
+                        quam nam provident quos, ipsa eos officia at quasi cum molestias.</p>
+                    <img src="assets/images/footer-logos-dark.png" alt="">
+                </div>
+                <div class="mid_footer">
+                    <span>Explore</span>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="Room.html">Room</a></li>
+                        <li><a href="index.html">Services</a></li>
+                        <li><a href="#">Contact us</a></li>
+                    </ul>
+                </div>
+                <div class="right_footer">
+                    <span>Newsletetr</span>
+                    <p>Stay up to date! Subscribe to us!</p>
+                    <input type="email" id="ip_email" placeholder="Enter your e-mail address"><br><br>
+                    <span>Get In Touch</span><br><br>
+                    <span><i class="fa-brands fa-facebook"></i><i class="fa-brands fa-instagram"></i><i
+                            class="fa-brands fa-twitter"></i><i class="fa-brands fa-google"></i><i
+                            class="fa-brands fa-youtube"></i></span>
+                </div>
+                <div class="bottom_footer">
+                    <P>&copy;Copyright 2023 THE ROYAL EMPIRE. All rights reserved by <b> HK_developer</b>.</P>
+                </div>
+
+            </div>
+        </footer>
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="js/script.js"></script>
+
+</body>
+</html>
